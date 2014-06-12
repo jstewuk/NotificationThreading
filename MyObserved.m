@@ -14,9 +14,9 @@
 -(void)postNotification
 {
     NSLog(@"in [%@ %@]", self.className, NSStringFromSelector(_cmd));
-    __weak typeof(self) weakself = self;
+    __weak typeof(self) weakSelf = self;
     dispatch_block_t postBlock = ^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"MyObservedNotification" object:weakself userInfo:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"MyObservedNotification" object:weakSelf userInfo:nil];
     };
     if ([NSThread isMainThread]) {
         postBlock();
