@@ -18,6 +18,8 @@
 		383954851948ED46008F464C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 383954641948ED46008F464C /* Cocoa.framework */; };
 		3839548D1948ED46008F464C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3839548B1948ED46008F464C /* InfoPlist.strings */; };
 		3839548F1948ED46008F464C /* NotificatioThreadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3839548E1948ED46008F464C /* NotificatioThreadingTests.m */; };
+		3839549D1948EDD7008F464C /* MyObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3839549C1948EDD7008F464C /* MyObserver.m */; };
+		383954A01948EE45008F464C /* MyObserved.m in Sources */ = {isa = PBXBuildFile; fileRef = 3839549F1948EE45008F464C /* MyObserved.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		3839548A1948ED46008F464C /* NotificatioThreadingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NotificatioThreadingTests-Info.plist"; sourceTree = "<group>"; };
 		3839548C1948ED46008F464C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3839548E1948ED46008F464C /* NotificatioThreadingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificatioThreadingTests.m; sourceTree = "<group>"; };
+		3839549B1948EDD7008F464C /* MyObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObserver.h; sourceTree = "<group>"; };
+		3839549C1948EDD7008F464C /* MyObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObserver.m; sourceTree = "<group>"; };
+		3839549E1948EE45008F464C /* MyObserved.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObserved.h; sourceTree = "<group>"; };
+		3839549F1948EE45008F464C /* MyObserved.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObserved.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,10 @@
 		383954581948ED46008F464C = {
 			isa = PBXGroup;
 			children = (
+				3839549B1948EDD7008F464C /* MyObserver.h */,
+				3839549C1948EDD7008F464C /* MyObserver.m */,
+				3839549E1948EE45008F464C /* MyObserved.h */,
+				3839549F1948EE45008F464C /* MyObserved.m */,
 				3839546A1948ED46008F464C /* NotificatioThreading */,
 				383954881948ED46008F464C /* NotificatioThreadingTests */,
 				383954631948ED46008F464C /* Frameworks */,
@@ -255,6 +265,8 @@
 			files = (
 				383954711948ED46008F464C /* main.m in Sources */,
 				383954781948ED46008F464C /* JSAppDelegate.m in Sources */,
+				3839549D1948EDD7008F464C /* MyObserver.m in Sources */,
+				383954A01948EE45008F464C /* MyObserved.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
